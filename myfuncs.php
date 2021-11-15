@@ -2,10 +2,10 @@
 
 function dbConnect() {
     // Connect to azure
-    //$link = mysqli_connect("127.0.0.1", "azure", "6#vWHD_$", "localdb", "52757");
+    $link = mysqli_connect("127.0.0.1", "azure", "6#vWHD_$", "mysql", "54102");
     
     // Connect to local
-    $link = mysqli_connect("127.0.0.1", "root", "root", "mysql");
+    //$link = mysqli_connect("127.0.0.1", "root", "root", "mysql");
     
     // Check connection
     if($link === false){
@@ -234,11 +234,10 @@ function showAdditionalMenus()
 	else
 	{
         echo('<a style="float:right" href="logoutHandler.php">Sign Out</a>');
-        echo('<a href="post.php">Create a Post</a>');
 	}
 
 
-	// Allow Admins to see Admin panel
+	// Allow Admins to see Admin panel. WILL USE SOON
 	if (getUserArrayFromCurrentUser($link)["PERMISSION_LEVEL"] == 2)
 	{
 		
