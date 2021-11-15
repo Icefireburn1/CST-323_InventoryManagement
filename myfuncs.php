@@ -2,10 +2,10 @@
 
 function dbConnect() {
     // Connect to azure
-    //$link = mysqli_connect("127.0.0.1", "azure", "6#vWHD_$", "localdb", "52757");
+    $link = mysqli_connect("127.0.0.1", "justingewecke", "", "mysql", "54102");
     
     // Connect to local
-    $link = mysqli_connect("127.0.0.1", "root", "root", "mysql");
+    //$link = mysqli_connect("127.0.0.1", "root", "root", "mysql");
     
     // Check connection
     if($link === false){
