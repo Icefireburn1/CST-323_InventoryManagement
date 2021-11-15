@@ -1,7 +1,7 @@
 <!doctype html>
 <html>
     <head>
-      <title>Final Project</title>
+      <title>CST-323</title>
       <link rel="stylesheet" href="style.css">
     </head>
     <body>
