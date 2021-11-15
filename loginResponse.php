@@ -1,0 +1,1 @@
+<h2>Login was successful: <?php echo " " . $username ?></h2>
